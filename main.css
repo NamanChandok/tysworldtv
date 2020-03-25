@@ -184,6 +184,15 @@ hr {
     background-image: url(images/contactbg.jpg) !important;
 }
 
+.works-home {
+    height: 90% !important;
+}
+
+.works-home::before {
+    height: 90% !important;
+    background-image: url(images/worksbg.jpg) !important;
+}
+
 /* ABOUT */
 
 
