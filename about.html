@@ -5,7 +5,7 @@
     
 <head>
 
-<title>TYS worldTV | #YaziForever</title>  
+<title>TYS worldTV | About Me</title>  
 
 <link href='https://fonts.googleapis.com/css?family=Raleway:400,100,200,300,400italic,500,100italic,700' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
@@ -28,39 +28,75 @@
     <a href="contact.html">Contact Me</a>
 </div>     
     
-   <div style="margin-top: 25%; margin-bottom: 20%; text-align: center"> Site Under Construction</div>
+    <!-- HOME -->
     
-    <!-- HOME 
-    
-<div id="home">
+<div id="home" class="about-home">
     <div class="heading animated fadeInDown">
         <center>
-            <h1>TYS worldTV</h1><br>
-            <a href="#about">Get Started</a><br><br>
-            <h3>#YaziForever at The Yazi Nation</h3>
+            <h1>About Me</h1><br>
         </center>
     </div>
 </div>
     
-    <!-- ABOUT 
+    <!-- ABOUT -->
     
 <center>        
     <div id="about">
         <div class="about-head">
-            <h2>About Me</h2>    
+            <h2>Who am I?</h2>    
             <hr>
-        </div>    
-        <div class="row">
-            <div class="col-md-8">
-                <div class="writen">
-                    <p> A cricketer and youtuber who started out doing youtube in Nov 2017 with the aim to entertain his audience. It was a slow start but in Nov 2018, his channel rocketed and jumped from 100 subs to 800 subs in just few months... In Oct 2019, TYS made it to 1k subs... <a href="about.html">Read More</a></p>    
-                </div> 
+        </div>   
+        <div class="writen">
+            <center>
+                <p> A cricketer and youtuber who started out doing youtube in Nov 2017 with the aim to entertain his audience. It was a slow start but in Nov 2018, his channel rocketed and jumped from 100      subs to 800 subs in just few months. In Oct 2019, TYS made it to 1k subs.<br>
+                Ever since his growth started, he has also decided to help new creators grow.<br>
+                A rather sensitive but bold TYS has always encouraged and helped others. Interested in Sports (especially Cricket), Psychology, Quizzing, Graphics Designing, Painting, Video Editing and a passion for cricket and with the aim to become one, his fearless attitude just keeps him going.</p>
+            </center>
+        </div> 
+    </div>
+</center>
+    
+<hr>
+    
+    <!-- AFFILIATIONS -->
+    
+<center>    
+    <div id="people">
+        <div class="about-head">
+            <h2>Affiliations</h2>    
+            <hr>
+        </div>   
+        <div class="people-pics">
+            <img src="images/people1.jpg" alt="test-1" class="nofilter">
+            <img src="images/people2.jpg" alt="test-2">
+            <img src="images/people3.jpg" alt="test-3">
+            <img src="images/people4.jpg" alt="test-4">
+            <img src="images/people5.jpg" alt="test-5">
+            
+        </div>
+        <div class="people-contents">
+            <div class="people active" id="test-1">
+                <span class="description">navyaaaaa....<br><a href="https://www.youtube.com/channel/UCP392rOB4YTQrAduUJnULjw" target="_blank">Check out their channel</a></span>
             </div>
-            <div class="col-md-2">
-                <img>
+            
+            <div class="people" id="test-2">
+                <span class="description">may b<br><a href="https://www.youtube.com/channel/UCcJsbxlKhPYkQNCuI5wDPgA" target="_blank">Check out their channel</a></span>
+            </div>
+            
+            <div class="people" id="test-3">
+                <span class="description">737 MaxMode<br><a href="https://www.youtube.com/channel/UC7jiSZeTub8UNWrvPDK2u7w" target="_blank">Check out their channel</a></span>
+            </div>
+            
+            <div class="people" id="test-4">
+                <span class="description">Pineapple Fun<br><a href="https://www.youtube.com/channel/UCGRog8gzlYUzGvcGUPiqr6Q" target="_blank">Check out their channel</a></span>
+            </div>
+            
+            <div class="people" id="test-5">
+                <span class="description">RaDyOAcTiV GeAr<br><a href="https://www.youtube.com/channel/UC2cuomU6x17TShefleNvGFg" target="_blank">Check out their channel</a></span>
             </div>
         </div>
     </div>
+    <hr>
 </center>
     
     <!-- FOOTER -->
@@ -85,6 +121,9 @@
 </center>
     
 <script>
+    
+    // SMOOTH SCROLL
+    
 $(document).ready(function(){
         $("a").on('click', function(event) {
             if (this.hash !== "") {
@@ -99,7 +138,16 @@ $(document).ready(function(){
             } 
         });
     });    
+
+    // PEOPLE SECTION SCRIPT
+    
+    $('.people-pics img').click(function(){
+        $(".people-pics img").removeClass("active");
+        $(this).addClass("active");
         
+        $(".people").removeClass("active");
+        $("#"+$(this).attr("alt")).addClass("active");
+    })
 </script>
 </body>    
 </html>

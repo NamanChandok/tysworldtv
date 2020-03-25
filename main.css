@@ -19,6 +19,11 @@ html {
 ::-webkit-scrollbar-thumb {
     background-color: #272727;
 }
+hr {
+    border-color: rgba(0, 38, 85, 40);
+    width: 70%;
+    margin: auto;
+}
 
 /* NAVBAR */
 
@@ -161,6 +166,24 @@ html {
     text-decoration: none;
 }
 
+.about-home {
+    height: 90% !important;
+}
+
+.about-home::before {
+    height: 90% !important;
+    background-image: url(images/aboutbg.jpg) !important;
+}
+
+.contact-home {
+    height: 90% !important;
+}
+
+.contact-home::before {
+    height: 90% !important;
+    background-image: url(images/contactbg.jpg) !important;
+}
+
 /* ABOUT */
 
 
@@ -195,7 +218,7 @@ html {
 }
 
 #about {
-    padding: 50;
+    padding: 5% 10%;
     color: #000;
     z-index: 2;
     align-content: center;
@@ -217,6 +240,65 @@ html {
  
 #about img {
     width: 80%
+}
+
+/*PEOPLE*/
+	
+#people {
+    padding: 5% 10%;
+}
+
+#people .about-head h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    color: var(--font-color);
+}
+
+#people .about-head hr {
+    border-top:solid 2px #002755;
+    width: 20%;
+}
+
+.people-pics{
+    padding: 40px 0;
+}
+
+.people-pics img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 0 20px;
+    filter: grayscale(50%);
+    transition: .3s;
+    cursor: pointer;
+}
+
+.people-pics img:hover, .people-pics img.active{
+    filter: none;
+}
+
+
+.people-contents{
+    max-width: 600px;
+    margin: auto;
+}
+
+.people{
+    display: none;
+}
+
+.people.active{
+    display: block;
+}
+
+.people p{
+    margin-bottom: 20px;
+}
+
+.people .description{
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 15px;
 }
 
 /*END*/
@@ -243,7 +325,80 @@ html {
 #end a {
     color: rgb(185, 231, 255);
 }
-    
+ 
+/*CONTACT*/
+
+#contact {
+    padding: 5% 10%;  
+}
+
+#contact .row {
+    padding-top: 5%;
+}
+
+#contact .col-md-4 {
+    align-content: center;
+    justify-content: center;
+}
+
+#contact .col-md-6 {
+    margin: 10px auto;
+}
+
+#contact form input[type=email], input[type=text], textarea {
+    border: transparent solid 2px;
+    border-bottom-color: #000c2c;
+    padding: 10;
+    justify-content: center;
+    align-content: center;
+    width: 60%;;
+    transition: 0.25s;
+    text-align: center;
+    margin: 10px auto;
+    background: none;
+}
+
+#contact form textarea {
+    width: 80%;
+}
+
+input[type="submit"] {
+    border: #002da7 solid 2px;
+    background: none;
+    border-radius: 30px;
+    padding: 10;
+    justify-content: center;
+    align-content: center;
+    width: 40%;
+    transition: 0.5s;
+    text-align: center;
+    margin: 5px auto;
+}
+
+input[type="submit"]:hover{
+    background: #002da7;
+    color: #fff;
+}
+
+#contact form input[type="email"]:focus-within {
+    border: transparent solid 2px;
+    border-bottom-color: #002da7;
+    width: 70%;
+}
+
+#contact form input[type="text"]:focus-within {
+    border: transparent solid 2px;
+    border-bottom-color: #002da7;
+    width: 70%;
+}
+
+#contact form textarea:focus-within {
+    border: transparent solid 2px;
+    border-bottom-color: #002da7;
+    width: 90%;
+}
+
+
 /* ANIMATIONS */
 
 @-webkit-keyframes open {
