@@ -1,0 +1,103 @@
+<html>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
+    
+<head>
+
+<title>TYS worldTV | #YaziForever</title>  
+
+<link href='https://fonts.googleapis.com/css?family=Raleway:400,100,200,300,400italic,500,100italic,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link href="https://fonts.googleapis.com/css?family=Dosis|Open+Sans" rel="stylesheet">
+<link href='main.css' rel='stylesheet' type='text/css'>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+    
+<body>
+    
+    <!-- NAVBAR -->
+    
+<div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="about.html">About Me</a>
+    <a href="works.html">Works</a>
+    <a href="contact.html">Contact Me</a>
+</div>   
+    
+    <!-- HOME -->
+    
+<div id="home">
+    <div class="heading animated fadeInDown">
+        <center>
+            <h1>TYS worldTV</h1><br>
+            <a href="#about">Get Started</a><br><br>
+            <h3>#YaziForever at The Yazi Nation</h3>
+        </center>
+    </div>
+</div>
+    
+    <!-- ABOUT -->
+    
+<center>        
+    <div id="about">
+        <div class="about-head">
+            <h2>About Me</h2>    
+            <hr>
+        </div>    
+        <div class="row">
+            <div class="col-md-8">
+                <div class="writen">
+                    <p> A cricketer and youtuber who started out doing youtube in Nov 2017 with the aim to entertain his audience. It was a slow start but in Nov 2018, his channel rocketed and jumped from 100 subs to 800 subs in just few months... In Oct 2019, TYS made it to 1k subs... <a href="about.html">Read More</a></p>    
+                </div> 
+            </div>
+            <div class="col-md-2">
+                <img src="images/logo.png">
+            </div>
+        </div>
+    </div>
+</center>
+    
+    <!-- FOOTER -->
+    
+<center>
+   <div id="end">
+        <div class="footer-text">
+            <div class="footer-copy font-alt">
+                <a href="index.html">Home</a>
+                |
+                <a href="about.html">About</a>
+                |
+                <a href="work.html">Works</a>
+                | 
+                <a href="contact.html">Contact</a>
+            </div>
+            <br>
+         <big><p class="footer-made">&copy; COPYRIGHT TYS WORLDTV 2020</p> </big>
+            <big><p class="footer-made"> Website Created by <a href="https://namanchandok.github.io"> Naman Chandok</a> </p></big>   
+        </div>
+    </div>
+</center>
+    
+<script>
+$(document).ready(function(){
+        $("a").on('click', function(event) {
+            if (this.hash !== "") {
+                event.preventDefault();
+                var hash = this.hash;
+                
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 800, function(){
+                    window.location.hash = hash;
+                });
+            } 
+        });
+    });    
+        
+</script>
+</body>    
+</html>
