@@ -1,4 +1,4 @@
-/* PRE-REQUISITES */
+    /* PRE-REQUISITES */
 
 * {
     margin: 0;
@@ -25,7 +25,7 @@ hr {
     margin: auto;
 }
 
-/* NAVBAR */
+    /* NAVBAR */
 
 .navbar a:hover {
     color: #fff;
@@ -193,7 +193,7 @@ hr {
     background-image: url(images/worksbg.jpg) !important;
 }
 
-/* ABOUT */
+    /* ABOUT */
 
 .about-head h2{
     font-family: 'Raleway', sans-serif;
@@ -254,7 +254,7 @@ hr {
     width: 60%;
 }
 
-/* NEWS */
+    /* NEWS */
 
 .news {
     border: transparent solid 2px;
@@ -455,7 +455,7 @@ input[type="submit"]:hover{
     width: 90%;
 }
 
-/* GALLERY */
+    /* GALLERY */
 
 .gallery {
     padding: 0% 7% 5% 7%;
@@ -501,7 +501,7 @@ input[type="submit"]:hover{
     background: #000;
 }
 
-/* ANIMATIONS */
+    /* ANIMATIONS */
 
 @-webkit-keyframes open {
     0% {
