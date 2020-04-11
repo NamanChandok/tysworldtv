@@ -195,7 +195,6 @@ hr {
 
 /* ABOUT */
 
-
 .about-head h2{
     font-family: 'Raleway', sans-serif;
     font-weight: 300;
@@ -227,7 +226,7 @@ hr {
 }
 
 #about {
-    padding: 5% 10%;
+    padding: 5% 7%;
     color: #000;
     z-index: 2;
     align-content: center;
@@ -246,15 +245,64 @@ hr {
 #about .writen p {
     padding-top: 5%;
 }
+
+.page-abt .writen p {
+    padding-top: 10% !important;
+}
  
 #about img {
-    width: 80%
+    width: 60%;
+}
+
+/* NEWS */
+
+.news {
+    border: transparent solid 2px;
+    border-left-color: #002755;
+    margin: 10%;
+    padding: 0 10%;
+}
+
+.news-container {
+    display: block;
+    color: #000;
+}
+
+.news-image {
+    width: 80%;
+    transition: 0.25s;
+}
+
+.news-image img {
+    width: 100%;
+}
+
+.news-text {
+    margin: 5% 0;
+    font-weight: 500;
+    transition: 0.25s;
+}
+
+.news-container:hover .news-image {
+    opacity: 0.8;
+}
+
+.news-container:hover {
+    color: #003a7e;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 992px) {
+    .news {
+        border-left-color: transparent;
+        border-top-color: #002755;
+    }
 }
 
 /*PEOPLE*/
 	
 #people {
-    padding: 5% 10%;
+    padding: 5% 7%;
 }
 
 #people .about-head h2 {
@@ -338,7 +386,7 @@ hr {
 /*CONTACT*/
 
 #contact {
-    padding: 5% 10%;  
+    padding: 5% 7%;  
 }
 
 #contact .row {
@@ -410,7 +458,7 @@ input[type="submit"]:hover{
 /* GALLERY */
 
 .gallery {
-    padding: 0% 10% 5% 10%;
+    padding: 0% 7% 5% 7%;
 }
 
 .image {
